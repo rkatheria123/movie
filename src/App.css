@@ -1,0 +1,43 @@
+body {
+	background: #ffffff;
+	color: #ffffff;
+}
+.row.d-flex.align-items-center.mt-4.mb-4 {
+    margin: 0 !important;
+    background: #000000;
+    box-shadow: 12px 12px 2px 1px rgb(46 46 109 / 20%);
+}
+.movie-app > .row {
+	overflow-x: auto;
+}
+.row.d-flex.align-items-center.mt-4.mb-4 {
+    margin-top: 8px !important;
+}
+h1 {
+    color: #ffffff;
+}
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
